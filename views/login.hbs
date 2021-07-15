@@ -1,0 +1,15 @@
+<form action="/login" method="POST">
+  <div class="card mx-auto mt-5" style="width: 25rem;">
+    <div class="card-body">
+      <h2 class="card-title text-center mb-3">Account Login</h2>
+      <p class="card-text">
+        <input type="email" class="form-control mb-2" id="email" placeholder="Email" name="email" required>
+        <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+        {{#if alert}}
+      <div class="alert alert-danger" role="alert">{{alert}}</div>
+      {{/if}}
+      </p>
+      <button type="submit" class="form-control btn btn-primary">Sign In</button>
+    </div>
+  </div>
+</form>
